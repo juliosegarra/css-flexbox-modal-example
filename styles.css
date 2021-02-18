@@ -8,12 +8,93 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  margin: 0; 
+  margin: 0;
+  background-color: #555;
 }
 
+/* Modal */
 .modal {
   height: 80vh;
   width: 900px;
   max-width: 80%;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  padding-top: 0.5rem;
+}
+
+/* Modal Body */
+.modal-body {
+  flex-grow: 1;
   overflow: auto;
+  padding: 1rem;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #777;
+}
+
+.modal-footer .btn {
+  margin-right: 0.5rem;
+}
+
+.modal-footer .btn:last-child {
+  margin-right: initial;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 0.3em;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #1ca;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #0a8;
+}
+
+.btn.btn-danger {
+  background-color: #c33;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+  background-color: #a11;
 }
